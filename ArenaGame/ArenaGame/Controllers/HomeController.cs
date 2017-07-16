@@ -13,16 +13,16 @@ namespace ArenaGame.Controllers
             return View();
         }
 
-        public ActionResult About()
+        public ActionResult DataManager()
         {
-            ViewBag.Message = "Your application description page.";
+            ViewBag.Message = "Database management page.";
 
             return View();
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Contact page.";
 
             return View();
         }
