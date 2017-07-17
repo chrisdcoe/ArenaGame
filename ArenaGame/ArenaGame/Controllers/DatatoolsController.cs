@@ -8,7 +8,7 @@ using ArenaGame.Repositories;
 
 namespace ArenaGame.Controllers
 {
-    public class WeaponsController : Controller
+    public class DatatoolsController : Controller
     {
         private WeaponRepository weaponRepository;
 
@@ -18,7 +18,7 @@ namespace ArenaGame.Controllers
             weaponRepository = new WeaponRepository();
             var weapons = weaponRepository.GetAll();
 
-            return View();
+            return View(weapons);
         }
 
         // add weapon
@@ -47,7 +47,7 @@ namespace ArenaGame.Controllers
         {
             weaponRepository = new WeaponRepository();
             var weapon = weaponRepository.GetById(id);
-            return RedirectToAction("Weapons");
+            return View(weapon);
         }
 
         [HttpPost]

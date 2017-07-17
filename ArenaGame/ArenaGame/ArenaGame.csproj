@@ -150,11 +150,20 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context.cs" />
-    <Compile Include="Controllers\WeaponsController.cs" />
+    <Compile Include="Controllers\DatatoolsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201707172249538_InitialCreate.cs" />
+    <Compile Include="Migrations\201707172249538_InitialCreate.Designer.cs">
+      <DependentUpon>201707172249538_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201707172309542_Initial.cs" />
+    <Compile Include="Migrations\201707172309542_Initial.Designer.cs">
+      <DependentUpon>201707172309542_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Armor.cs" />
     <Compile Include="Models\Creature.cs" />
     <Compile Include="Models\Enemy.cs" />
@@ -230,6 +239,14 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201707172249538_InitialCreate.resx">
+      <DependentUpon>201707172249538_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201707172309542_Initial.resx">
+      <DependentUpon>201707172309542_Initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

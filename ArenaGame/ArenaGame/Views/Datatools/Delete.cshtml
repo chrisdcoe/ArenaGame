@@ -1,7 +1,39 @@
-﻿
+﻿@model ArenaGame.Models.Weapon
 @{
     ViewBag.Title = "Delete";
 }
 
-<h2>Delete</h2>
+<h2>Delete this weapon?</h2>
 
+<div>
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Price)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Price)
+        </dd>
+        <dt>
+            Damage
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.MinDamage) - @Html.DisplayFor(model => model.MaxDamage)
+        </dd>        
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" />
+            @Html.ActionLink("Back to List", "Weapons")
+        </div>
+    }
+</div>
