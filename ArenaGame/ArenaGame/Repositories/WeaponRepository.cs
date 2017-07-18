@@ -23,6 +23,7 @@ namespace ArenaGame.Repositories
             using (var context = new Context())
             {
                 var weaponToUpdate = context.Weapons.Find(weapon.ID);
+                weaponToUpdate.Name = weapon.Name;
                 weaponToUpdate.Price = weapon.Price;
                 weaponToUpdate.MinDamage = weapon.MinDamage;
                 weaponToUpdate.MaxDamage = weapon.MaxDamage;
