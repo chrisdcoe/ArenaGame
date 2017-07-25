@@ -6,15 +6,15 @@ namespace ArenaGame.Migrations
     using System.Linq;
     using ArenaGame.Models;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<ArenaGame.Context>
+    internal sealed class Configuration : DbMigrationsConfiguration<Context>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = false;
-            ContextKey = "ArenaGame.Context";
+            ContextKey = "ArenaGame";
         }
 
-        protected override void Seed(ArenaGame.Context context)
+        protected override void Seed(Context context)
         {
             context.Weapons.AddOrUpdate(
                 x => x.ID,
