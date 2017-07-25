@@ -14,7 +14,7 @@ and type update-database
 This should populate the database with some initial seed data.
 Then you can simply start it up in your browser.
 
-The tool I created for manipulating the weapons database will be found by following the link to the
-Data Manager, and then to the Weapon Database.
+The tool I created for manipulating the weapons database will be found by simply clicking the Weapon Database button
+or following the navigation link at the top of the page.
 
 Now you should be able to see the database. Play around with it, add new entries, edit and delete existing ones.

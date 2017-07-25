@@ -7,12 +7,9 @@
 
 @using (@Html.BeginForm("CreateWeapon", "WeaponDB"))
 {
-    @Html.AntiForgeryToken()
-
     <div class="form-horizontal">
 
-        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
-        @Html.HiddenFor(model => model.ID)
+        
 
         <div class="form-group">
             @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -48,7 +45,6 @@
                 <input type="submit" class="btn btn-success" value="Save" />
                 <input type="button" class="btn btn-default" value="Cancel" onclick="location.href='@Url.Action("Weapons")'" />
             </div>
-
         </div>
     </div>
 }
