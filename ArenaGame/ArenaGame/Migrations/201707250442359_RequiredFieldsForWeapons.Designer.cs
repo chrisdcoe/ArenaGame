@@ -7,13 +7,13 @@ namespace ArenaGame.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.1.3-40302")]
-    public sealed partial class Initial : IMigrationMetadata
+    public sealed partial class RequiredFieldsForWeapons : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(Initial));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(RequiredFieldsForWeapons));
         
         string IMigrationMetadata.Id
         {
-            get { return "201707172309542_Initial"; }
+            get { return "201707250442359_RequiredFieldsForWeapons"; }
         }
         
         string IMigrationMetadata.Source

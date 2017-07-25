@@ -150,7 +150,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context.cs" />
-    <Compile Include="Controllers\DatatoolsController.cs" />
+    <Compile Include="Controllers\WeaponDBController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -159,9 +159,9 @@
     <Compile Include="Migrations\201707172249538_InitialCreate.Designer.cs">
       <DependentUpon>201707172249538_InitialCreate.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201707172309542_Initial.cs" />
-    <Compile Include="Migrations\201707172309542_Initial.Designer.cs">
-      <DependentUpon>201707172309542_Initial.cs</DependentUpon>
+    <Compile Include="Migrations\201707250442359_RequiredFieldsForWeapons.cs" />
+    <Compile Include="Migrations\201707250442359_RequiredFieldsForWeapons.Designer.cs">
+      <DependentUpon>201707250442359_RequiredFieldsForWeapons.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Armor.cs" />
@@ -224,15 +224,13 @@
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
-    <Content Include="Views\Home\DataManager.cshtml" />
-    <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-3.1.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.1.1.min.map" />
-    <Content Include="Views\Datatools\Weapons.cshtml" />
-    <Content Include="Views\Datatools\Edit.cshtml" />
-    <Content Include="Views\Datatools\Delete.cshtml" />
-    <Content Include="Views\Datatools\Create.cshtml" />
+    <Content Include="Views\WeaponDB\Weapons.cshtml" />
+    <Content Include="Views\WeaponDB\Edit.cshtml" />
+    <Content Include="Views\WeaponDB\Delete.cshtml" />
+    <Content Include="Views\WeaponDB\Create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -244,8 +242,8 @@
     <EmbeddedResource Include="Migrations\201707172249538_InitialCreate.resx">
       <DependentUpon>201707172249538_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201707172309542_Initial.resx">
-      <DependentUpon>201707172309542_Initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201707250442359_RequiredFieldsForWeapons.resx">
+      <DependentUpon>201707250442359_RequiredFieldsForWeapons.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

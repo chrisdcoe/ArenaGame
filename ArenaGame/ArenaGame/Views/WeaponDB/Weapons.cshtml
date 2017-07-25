@@ -5,8 +5,7 @@
 
 <h2>Weapons</h2>
 
-<p>@Html.ActionLink("Create New", "Create")</p>
-
+<input type="button" class="btn btn-success" value="Create" onclick="location.href='@Url.Action("Create")'" />
 <table class="table">
     <tr>
         <th>
@@ -40,8 +39,8 @@
                 @Html.DisplayFor(modelItem => item.MaxDamage)
             </td>
             <td>
-                @Html.ActionLink("Edit", "Edit", new { id = item.ID }) | 
-                @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                <input type="button" class="btn btn-warning btn-sm" value="Edit" onclick="location.href='@Url.Action("Edit", new { id = item.ID })'" /> | 
+                <input type="button" class="btn btn-danger btn-sm" value="Delete" onclick="location.href='@Url.Action("Delete", new { id = item.ID })'" />
             </td>
 
         </tr>

@@ -8,7 +8,7 @@ using ArenaGame.Repositories;
 
 namespace ArenaGame.Controllers
 {
-    public class DatatoolsController : Controller
+    public class WeaponDBController : Controller
     {
         private WeaponRepository weaponRepository;
 

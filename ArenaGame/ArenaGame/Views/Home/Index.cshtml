@@ -5,11 +5,12 @@
 <div class="jumbotron">
     <h1>ARENA GAME</h1>
     <p class="lead">This is the current front page of the ArenaGame project. Right now, its main function is to assemble databases of items and stuff. There won't be an actual functioning game for a while.</p>
+    <p>This page then serves to function as a welcome page while also demonstrating page navigation.</p>
 </div>
 
 <div class="row">
-    Here is a tool for managing the database.
-    <div class="btn btn-default">
-        @Html.ActionLink("Data Manager", "DataManager", "Home")
-    </div>
+    <p>Here is a tool for managing the weapons database.</p> 
+
+    <input type="button" class="btn btn-primary btn-lg" value="Weapon Database" onclick="location.href='@Url.Action("Weapons", "WeaponDB")'" />
+
 </div>
